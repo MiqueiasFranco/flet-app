@@ -1,0 +1,13 @@
+[Unit]
+Description=Flet Server
+After=network.target
+
+[Service]
+User=miquepaty
+Group=adm
+WorkingDirectory=/home/miquepaty/Área de Trabalho/flet-app
+Environment="PATH=/home/miquepaty/'Área de Trabalho'/flet-app/.venv/bin"
+ExecStart=/home/miquepaty/'Área de Trabalho'/flet-app/.venv/bin/python /home/miquepaty/'Área de Trabalho'/flet-app/main.py
+
+[Install]
+WantedBy=multi-user.target
