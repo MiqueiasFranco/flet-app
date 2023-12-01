@@ -7,7 +7,7 @@ if sys.platform == "emscripten": # check if run in Pyodide environment
     import micropip
     await micropip.install("regex")
 
-    
+
 clientesAgendados = []
 datasAgendadas = []
 domingos = (3, 10, 17, 24)
@@ -152,5 +152,5 @@ def main(pagina: ft.Page):
 
 if __name__ == "__main__":
     flet_path = os.getenv("FLET_PATH", DEFAULT_FLET_PATH)
-    flet_port = int(os.getenv("FLET_PORT", DEFAULT_FLET_PORT))
+    
     ft.app(name=flet_path, target=main, view=ft.WEB_BROWSER)
