@@ -140,6 +140,7 @@ def main(pagina: ft.Page):
         ft.Row([botao], alignment=ft.MainAxisAlignment.CENTER),
         #ft.Row([botao_cadastros], alignment=ft.MainAxisAlignment.CENTER),
     )
+    pagina.update()
 
 
 
