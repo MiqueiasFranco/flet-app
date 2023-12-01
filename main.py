@@ -115,9 +115,9 @@ def main(pagina: ft.Page):
                                     pagina.add(
                                         ft.Row([botao_return], alignment=ft.MainAxisAlignment.CENTER))
 
-                                    pagina.update()
                                     clientesAgendados.append(nome)
                                     datasAgendadas.append(adicionarDatas)
+                                    pagina.update()
                                     
 
     # criar os itens que queremos na pagina
@@ -146,4 +146,4 @@ def main(pagina: ft.Page):
 
 
 
-ft.app(target=main, view=ft.WEB_BROWSER)
+ft.app(target=main)
