@@ -146,4 +146,4 @@ def main(pagina: ft.Page):
 
 
 
-ft.app(target=main)
+ft.app(target=main, view=ft.FLET_APP_WEB)
