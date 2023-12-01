@@ -1,7 +1,13 @@
 import flet as ft
 import mysql.connector
 import os
+import sys
 
+if sys.platform == "emscripten": # check if run in Pyodide environment
+    import micropip
+    await micropip.install("regex")
+
+    
 clientesAgendados = []
 datasAgendadas = []
 domingos = (3, 10, 17, 24)
